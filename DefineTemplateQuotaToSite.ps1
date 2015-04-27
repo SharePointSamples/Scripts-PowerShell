@@ -8,5 +8,5 @@ $quotaTemplate = $contentService.QuotaTemplates[$TemplateName]
 $webApplication = Get-SPWebApplication $WebApplicationUrl
 $webApplication.Sites | ForEach-Object { try { $_.Quota = $quotaTemplate; } finally { $_.Dispose(); } }
 
-write-host "Operação realizada com sucesso!"
+write-host "OperaÃ§Ã£o realizada com sucesso!"
 read-host
