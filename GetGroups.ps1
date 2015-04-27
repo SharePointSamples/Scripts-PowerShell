@@ -1,4 +1,4 @@
-$site = Get-SPSite <Endereço do Site>
+$site = Get-SPSite <EndereÃ§o do Site>
 $groups = $site.RootWeb.sitegroups
 foreach ($grp in $groups) {if($grp.Users.Count -eq 0) { $grp.name; } } 
 $site.Dispose() 
